@@ -22,4 +22,4 @@ function mover(){
     
 }
 
-button.addEventListener("click",()=>setInterval(Mover,100));
+button.addEventListener("click",()=>setInterval(mover,100));

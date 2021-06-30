@@ -8,9 +8,6 @@ let largo = 30;
 let ctx = canvas.getContext("2d");
 
 
-function inter() {
-    let intervalo = setInterval(mover,100);
-}
 function draw() {
     ctx.beginPath();
     ctx.fillRect(x, y, ancho, largo);
@@ -25,7 +22,4 @@ function mover(){
     
 }
 
-
-button.addEventListener("click",inter);
-
-
+button.addEventListener("click",setInterval(Mover,100));

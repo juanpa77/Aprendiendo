@@ -2,6 +2,7 @@
 const canvas = document.getElementById("lienzo");
 const button = document.getElementById("mover");
 const shotButton = document.getElementById("disparo");
+const moveRight = document.getElementById("derecha");
 const ctx = canvas.getContext("2d");
 let x = 40;
 let y = 0;
@@ -105,6 +106,7 @@ function draw() {
     } else if (downPressed) {
         y += dy;
     }
+}
 /* 
 ---- Comprovacion para invertir movimiento animacion-----
 if (y + dy >= canvas.height) {
@@ -114,4 +116,4 @@ if (y + dy >= canvas.height) {
  y += dy; */
 button.addEventListener("click",()=> setInterval(draw, 200));
 shotButton.addEventListener("click",()=> setInterval(drawShot, 10));
-
+moveRight.addEventListener('click',()=> rightPressed = true);

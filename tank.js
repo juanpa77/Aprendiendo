@@ -1,6 +1,6 @@
 const canvas = document.getElementById("lienzo");
 const ctx = canvas.getContext("2d");
-let x = 0;
+let x = 20;
 let y = 0;
 
 class Tank{

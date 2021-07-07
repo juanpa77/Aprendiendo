@@ -1,27 +1,33 @@
+/*let dy = 2;
+let dx = 2;
+function loopDisparo(){
+    tanke1.disparo(x,y);
+    posicionInicialy++;
+    window.requestAnimationFrame(loopDisparo)
+}
 function loop() {
-   button.addEventListener('click',mover);
     ctx.clearRect(0,0,canvas.width,canvas.height);
-    tanke1.drawTank()
-    button.addEventListener('click',mover);
- 
+    tanke1.drawTank(x,y);
+   
     if (rightPressed) {
-        x += 2;        
+        x += dx;       
     }
     else if (leftPressed) {
-        x -= 2;
+        x -= dx;
     }
 
     if (upPressed) {
-        y -= 2;
+        y -= dy;
     } else if (downPressed) {
-        y += 2;
+        y += dy;
     }
-    x++;
+    if (spacePressed) {
+        loopDisparo();
+    }
+    
     window.requestAnimationFrame(loop);
 }
-
- button.addEventListener('click',mover);
-function mover(){
-  x+=29;
+loop(); */
+function frameLoop(){
+ tanke1.drawTank;   
 }
-loop()
